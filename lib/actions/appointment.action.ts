@@ -74,7 +74,6 @@ export async function getRecentAppointmentList() {
       documents: appointments.documents,
     };
 
-    revalidatePath("/admin");
     return parseStringify(data);
   } catch (error) {
     console.error(

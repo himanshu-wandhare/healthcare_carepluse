@@ -1,25 +1,28 @@
+export const revalidate = 10;
+
 import Image from "next/image";
 import StatCard from "@/components/StatCard";
 import { columns } from "@/components/table/columns";
 import { DataTable } from "@/components/table/DataTable";
 
 import { getRecentAppointmentList } from "@/lib/actions/appointment.action";
+import Link from "next/link";
 
 export default async function AdminPage() {
   const appointments = await getRecentAppointmentList();
 
-  console.log(appointments);
-
   return (
     <div className="flex flex-col max-w-7xl mx-auto space-y-14">
       <header className="admin-header">
-        <Image
-          src="/assets/icons/logo-full.svg"
-          alt="care pulse logo"
-          width={162}
-          height={32}
-          className="h-8 w-fit"
-        />
+        <Link href="/" className="cursor-pointer">
+          <Image
+            src="/assets/icons/logo-full.svg"
+            alt="care pulse logo"
+            width={162}
+            height={32}
+            className="h-8 w-fit"
+          />
+        </Link>
         <p className="text-16-semibold">Admin Dashboard</p>
       </header>
       <main className="admin-main">
