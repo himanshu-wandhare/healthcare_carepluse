@@ -8,6 +8,8 @@ import { getRecentAppointmentList } from "@/lib/actions/appointment.action";
 export default async function AdminPage() {
   const appointments = await getRecentAppointmentList();
 
+  console.log(appointments);
+
   return (
     <div className="flex flex-col max-w-7xl mx-auto space-y-14">
       <header className="admin-header">
@@ -30,19 +32,19 @@ export default async function AdminPage() {
         <section className="admin-stat">
           <StatCard
             type="appointments"
-            count={appointments?.scheduledCount}
+            count={appointments.scheduledCount}
             label="Scheduled Appointments"
             icon="/assets/icons/appointments.svg"
           />
           <StatCard
             type="pending"
-            count={appointments?.pendingCount}
+            count={appointments.pendingCount}
             label="Pending Appointments"
             icon="/assets/icons/pending.svg"
           />
           <StatCard
             type="cancelled"
-            count={appointments?.cancelledCount}
+            count={appointments.cancelledCount}
             label="Cancelled Appointments"
             icon="/assets/icons/cancelled.svg"
           />
