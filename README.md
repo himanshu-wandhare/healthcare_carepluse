@@ -1,6 +1,5 @@
 <h3 align="center">A HealthCare Management System</h3>
 
-
 ## <a name="introduction">🤖 Introduction</a>
 
 A healthcare patient management application that allows patients to easily register, book, and manage their appointments with doctors, featuring administrative tools for scheduling, confirming, and canceling appointments, along with SMS notifications, all built using Next.js.
@@ -51,7 +50,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/adrianhajdin/healthcare.git
+git clone https://github.com/himanshu-wandhare/healthcare_carepluse.git
 cd healthcare
 ```
 
@@ -89,4 +88,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
-
