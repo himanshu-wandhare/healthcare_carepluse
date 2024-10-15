@@ -51,7 +51,7 @@ Make sure you have the following installed on your machine:
 
 ```bash
 git clone https://github.com/himanshu-wandhare/healthcare_carepluse.git
-cd healthcare
+cd healthcare_carepluse
 ```
 
 **Installation**
